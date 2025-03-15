@@ -1,0 +1,48 @@
+
+
+.gem-registration {
+    background-color: #f2e7d5; /* Background color from the image */
+    padding: 80px 20px; /* Adjust padding to your preference */
+    text-align: center;
+    font-family: sans-serif; /* A generic sans-serif font */
+    color: #594a41; /* Text color from the image */
+}
+  
+.title {
+    font-size: 2.5em; /* Adjust as needed */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+  
+.subtitle {
+    font-size: 1.2em; /* Adjust as needed */
+    margin-bottom: 50px;
+}
+  
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust gap */
+    max-width: 1000px; /* Adjust for desired width of the cards */
+    margin: 0 auto; /* Center cards */
+}
+  
+.card {
+    width: 300px; /* Adjust card width as needed */
+    border: 1px solid #594a41; /* Light border color from the image */
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the card's total width */
+}
+  
+.card h3 {
+    font-size: 1.3em; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+  
+.card p {
+    font-size: 1em; /* Adjust as needed */
+    line-height: 1.5;
+}
