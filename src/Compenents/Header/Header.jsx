@@ -14,7 +14,7 @@ const Header = () => {
 
       <nav className={`navbar ${menuOpen ? "open" : ""}`}>
         <a href="#home">Home</a>
-        <a href="#why">Why EleEYE?</a>
+        <a href="#why">Vision</a>
         <a href="#features">Features</a>
         <a href="#about">Our Team</a>
       </nav>

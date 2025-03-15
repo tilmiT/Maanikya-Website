@@ -6,6 +6,7 @@ import Vision from "./Compenents/Vision";
 import Features from "./Compenents/Feature/Features";
 import Team from "./Compenents/Team/Team";
 import Footer from "./Compenents/Footer/Footer";
+import Contact from "./Compenents/Contact/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Vision />
       <Features />
       <Team />
+      <Contact />
       <Footer />
     </div>
   );

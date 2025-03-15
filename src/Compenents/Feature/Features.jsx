@@ -3,29 +3,22 @@ import"./Features.css";
 
 const features = [
   {
-    title: "Real-Time Detection",
-    content: "AI-powered system continuously scans for elephants near roadways, providing instant location updates."
+    title: "AI Auto Filling",
+    content: "AI-powered data generation of colour and other characteristics reduces human errors in recordkeeping and allows for more appropriate data accuracy."
   },
   {
-    title: "Community Reporting",
-    content: "Users can report and verify elephant sightings, ensuring real-time accuracy through crowd-sourced data."
+    title: "Real Time Gem Tracking",
+    content: "Users can get real time updates on gems about there currewnt statusUsers can receive real-time updates about the status of gems, including detailed information on their availability, quality, and current condition. These updates provide users with immediate insights, ensuring they are always informed about the latest developments and can make timely decisions regarding the gems they are tracking or interested inUsers can receive real-time updates on the status of their gems, providing them with detailed information about their current condition, location, and any significant changes or alerts"
   },
   {
-    title: "Automatic Warnings",
-    content: "Smart warning lights activate on-site when an elephant is detected nearby, reducing the risk of collisions."
+    title: "Maintain Gem Inventory",
+    content: "Storing records online will reduce the possibility of misplacement or loss of data. One can securely log into an online database at any given time to get recorded information about the gem"
   },
   {
-    title: "Mobile Notifications",
-    content: "Receive instant alerts on your phone when approaching elephant zones, allowing you to take precautions in advance."
+    title: "QR Code Indentification",
+    content: "Accessing gem information has never been easier simply scan the QR code to retrieve comprehensive details at your fingertips."
   },
-  {
-    title: "Offline Support",
-    content: "EleEYE stores critical updates so you can access recent elephant sightings even in low-connectivity areas."
-  },
-  {
-    title: "24/7 Monitoring",
-    content: "AI-powered surveillance works round the clock, ensuring continuous tracking of elephant movements."
-  }
+  
 ];
 
 const Features = () => {

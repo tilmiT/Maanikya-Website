@@ -13,6 +13,7 @@
     font-size: 3.5em;
     font-weight: bold;
     color: #222;
+    align-items: center;
 }
   
 .home-content h3 {
@@ -26,7 +27,7 @@
     color: #555;
     line-height: 1.6;
 }
-  
+ 
 .social-icons {
     margin-top: 30px;
 }
@@ -35,9 +36,9 @@
     font-size: 24px;
     color: #333;
     margin-right: 20px;
-    text-decoration: none; /* Remove underline from social links */
+    text-decoration: none; 
 }
-  
+ 
 .home-img {
     flex: 1;
     text-align: center;
