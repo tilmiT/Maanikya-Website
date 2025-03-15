@@ -1,0 +1,83 @@
+/* Features.css */
+
+#features {
+    padding: 80px 0; /* Adjust padding as needed */
+    background-color: #fff; /* White background */
+  }
+  
+  .stack-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 0 20px; /* Add some horizontal padding */
+  }
+  
+  .left {
+    flex: 1;
+    padding-right: 40px; /* Add some spacing between left and right */
+  }
+  
+  .title {
+    font-size: 3em; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #222; /* Dark text color */
+    margin-bottom: 20px;
+  }
+  
+  .title span {
+    color: #5cb85c; /* Green color */
+  }
+  
+  .sub-title {
+    font-size: 1.1em; /* Adjust font size as needed */
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .right {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #f0f8f0; /* Light green background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    height: 100%; /* Ensure cards have equal height */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .card .sub {
+    font-size: 1.3em; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card .content {
+    font-size: 1em; /* Adjust font size as needed */
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  /* Add a media query for smaller screens */
+  @media (max-width: 768px) {
+    .stack-area {
+      flex-direction: column; /* Stack the left and right sections */
+      text-align: center; /* Center the text */
+    }
+  
+    .left {
+      padding-right: 0;
+      margin-bottom: 30px; /* Add some spacing below the left section */
+    }
+  }

@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline from the logo link */
+}
+  
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+  
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+  
+.navbar a {
+    text-decoration: none;
+    color: #333;
+}
+  
+.gradient-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from the button link */
+}
+  
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+  /* Optional: Style for the open menu (if you need it) */
+.navbar.open {
+    /* Add styles for when the menu is open (e.g., display: block;) */
+}

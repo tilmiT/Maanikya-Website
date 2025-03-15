@@ -1,0 +1,22 @@
+/* Footer.css */
+
+.footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 30px 20px; /* Adjust padding */
+    text-align: center;
+    border-radius: 20px 20px 0 0; /* Rounded corners at the top */
+    margin-top: 50px; /* Add some space above the footer */
+  }
+  
+  .footer p {
+    font-size: 0.9em; /* Adjust font size */
+    opacity: 0.7; /* Slightly transparent text */
+  }
+  
+  /* Optional: Media query for smaller screens */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+  }
