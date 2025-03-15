@@ -2,12 +2,12 @@ import React from "react";
 import "./Team.css";
 
 const teamMembers = [
-  { name: "Kavintha Dinushan", role: "Team Leader and Project Manager", img: "static/ranindi.png" },
-  { name: "Thulani Kalatuwawa", role: "FrontEnd Developer", img: "static/gayathmi.png" },
-  { name: "Dulith Wanigarathne", role: "BackEnd Developer", img: "static/jose.png" },
-  { name: "Isum Perera", role: "Machine Learning Engineer", img: "static/chaniya.png" },
-  { name: "Mehara Wilfred", role: "Database Specialist", img: "static/ravinda.png" },
-  { name: "Tilmi Premarathne", role: "UI/UX & Marketing", img: "static/minindu.png" }
+  { name: "Kavintha Dinushan", role: "Team Leader and Project Manager", img: "src/assets/Team/Kavintha.jpg" },
+  { name: "Thulani Kalatuwawa", role: "FrontEnd Developer", img: "src/assets/Team/Thulani.jpg" },
+  { name: "Dulith Wanigarathne", role: "BackEnd Developer", img: "src/assets/Team/Dulith.jpg" },
+  { name: "Isum Perera", role: "Machine Learning Engineer", img: "src/assets/Team/Isum.jpg" },
+  { name: "Mehara Wilfred", role: "Database Specialist", img: "src/assets/Team/Mehara.jpg" },
+  { name: "Tilmi Premarathne", role: "UI/UX & Marketing", img: "src/assets/Team/Tilmi.jpg" }
 ];
 
 const Team = () => {
