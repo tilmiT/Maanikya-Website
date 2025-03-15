@@ -1,51 +1,267 @@
+/* Home.css */
 .home {
+    position: relative;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 80px;
-    background-color: #f9f9f9;
-}
+    justify-content: center;
+    background: linear-gradient(135deg, #111124 0%, #0a1428 50%, #13172e 100%);
+    padding: 0 5%;
+    overflow: hidden;
+  }
   
-.home-content {
-    flex: 1;
-    padding-right: 40px;
-}
-.home-content h1 {
-    font-size: 3.5em;
-    font-weight: bold;
-    color: #222;
-    align-items: center;
-}
+  .home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 70% 30%, #2a5ca030 0%, transparent 60%);
+    z-index: 1;
+  }
   
-.home-content h3 {
-    font-size: 1.8em;
-    color: #5cb85c;
-    margin-bottom: 20px;
-}
-  
-.home-content p {
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.6;
-}
- 
-.social-icons {
-    margin-top: 30px;
-}
-  
-.social-icons a {
-    font-size: 24px;
-    color: #333;
-    margin-right: 20px;
-    text-decoration: none; 
-}
- 
-.home-img {
-    flex: 1;
-    text-align: center;
-}
-  
-.home-img img {
-    max-width: 100%;
-    max-height: 500px;
+  .home::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-}
+    background: #2a5ca020;
+    filter: blur(80px);
+    z-index: 0;
+  }
+  
+  /* Add additional gradient accent */
+  .home::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #1a4b8c15;
+    filter: blur(90px);
+    z-index: 0;
+  }
+  
+  .home-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+    animation: fadeUp 1s ease-out;
+  }
+  
+  .home-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Modern text animation for WELCOME TO MAANIKYA */
+  #typing-effect {
+    position: relative;
+    background: linear-gradient(
+      to right,
+      #ffffff,
+      #4d83d2,
+      #ffffff,
+      #4d83d2
+    );
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-text 4s ease infinite,
+               reveal-text 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transform-origin: left;
+    white-space: nowrap;
+  }
+  
+  .home-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #b0b0b0;
+    font-weight: 400;
+    animation: fadeIn 1.5s ease-out 0.5s backwards;
+  }
+  
+  .home-content h3 span {
+    color: #2a5ca0;
+    position: relative;
+    font-weight: 600;
+    animation: glowPulse 3s infinite;
+  }
+  
+  .home-content p {
+    font-size: 1.2rem;
+    color: #d0d0d0;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 1.5s ease-out 0.8s backwards;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    animation: fadeIn 1.5s ease-out 1s backwards;
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(30, 30, 48, 0.7);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-icons a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #2a5ca0, transparent 70%);
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: scale(0);
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(-5px);
+    border-color: #2a5ca0;
+    box-shadow: 0 0 20px rgba(42, 92, 160, 0.5);
+  }
+  
+  .social-icons a:hover::before {
+    opacity: 0.3;
+    transform: scale(1.5);
+  }
+  
+  .instaIcon, .facebookIcon {
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons a:hover .instaIcon,
+  .social-icons a:hover .facebookIcon {
+    color: #2a5ca0;
+    transform: scale(1.2);
+  }
+  
+  /* New animation keyframes */
+  @keyframes gradient-text {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes reveal-text {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+    100% {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  /* Existing animation keyframes */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes glowPulse {
+    0% {
+      text-shadow: 0 0 5px rgba(42, 92, 160, 0.3);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(42, 92, 160, 0.7);
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(42, 92, 160, 0.3);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .home-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .home-content h3 {
+      font-size: 1.5rem;
+    }
+    
+    .home-content p {
+      font-size: 1rem;
+    }
+    
+    #typing-effect {
+      white-space: normal;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .home {
+      padding: 0 1rem;
+    }
+  
+    .home-content h1 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    
+    .home-content h3 {
+      font-size: 1.2rem;
+    }
+    
+    .social-icons a {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+  }

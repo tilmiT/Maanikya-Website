@@ -7,7 +7,7 @@ const Home = () => {
     <section className="home" id="home">
       <div className="home-content">
         <h1 id="typing-effect">WELCOME TO MAANIKYA</h1>
-        <h3><span>Your Personal Gemstone Assistant</span></h3>
+        <h3><span>YOUR PERSONAL GEMSTONE ASSISTANT</span></h3>
         <p>Transforming the way gemstones are managed with innovative technology that ensures accuracy, security, and transparency</p>
 
         <div className="social-icons">
