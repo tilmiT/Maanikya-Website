@@ -1,22 +1,30 @@
-/* Footer.css */
-
 .footer {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-    padding: 30px 20px; /* Adjust padding */
-    text-align: center;
-    border-radius: 20px 20px 0 0; /* Rounded corners at the top */
-    margin-top: 50px; /* Add some space above the footer */
+  background: white;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  background: linear-gradient(to right, #a000fc, #0048ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem;
   }
   
   .footer p {
-    font-size: 0.9em; /* Adjust font size */
-    opacity: 0.7; /* Slightly transparent text */
+    font-size: 0.8rem;
   }
-  
-  /* Optional: Media query for smaller screens */
-  @media (max-width: 768px) {
-    .footer {
-      padding: 20px 10px; /* Adjust padding for smaller screens */
-    }
-  }
+}

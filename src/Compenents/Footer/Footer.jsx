@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer" id="contact">
-      <p>© 2025 EleEYE. All Rights Reserved.</p>
+      <p>© 2025 Maanikya. All Rights Reserved.</p>
     </footer>
   );
 };
