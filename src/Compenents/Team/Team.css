@@ -1,91 +1,102 @@
-/* Team.css */
+/* Team.css - Modern and Responsive */
 #about {
-  background-color: #121212;
-  padding: 4rem 2rem;
+  background-color: rgba(164, 209, 239, 0.5);
+  padding: clamp(3rem, 5vw, 4rem) clamp(1rem, 3vw, 2rem);
   color: #ffffff;
 }
 
+/* Typography */
 .section-title {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   letter-spacing: 1px;
-  color: #f5f5f5;
+  background: linear-gradient(135deg, #000dff, #c300ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .section-title span {
-  color: #1a4b8c; /* Navy blue accent */
+  color: inherit;
   position: relative;
+  display: inline-block;
 }
 
+/* Remove the underline animation */
 .section-title span::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background-color: #1a4b8c;
-  animation: underline 2s forwards;
+  display: none;
 }
 
+/* Team Grid Layout */
 .team-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 300px)); /* Fixed 3 columns */
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
+  justify-content: center; /* Center the grid */
 }
 
+/* Team Card Styling */
 .team-card {
-  background-color: #1e1e1e;
+  background: linear-gradient(135deg, #8574c0, #6f98be);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-bottom: 1.5rem;
+  height: 100%;
   opacity: 0;
   animation: fadeIn 0.5s forwards;
   animation-delay: calc(0.1s * var(--index, 0));
+  max-height: 400px; /* Control card height */
+  width: 100%;
+  margin: 0 auto;
 }
 
 .team-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(26, 75, 140, 0.3);
+  box-shadow: 0 15px 30px rgba(139, 92, 225, 0.4);
 }
 
 .team-card img {
   width: 100%;
-  height: 280px;
+  height: 220px; /* Fixed height for images */
   object-fit: cover;
-  border-bottom: 3px solid #1a4b8c;
-  transition: filter 0.3s ease;
+  border-bottom: 3px solid #6c4bc7;
+  transition: transform 0.5s ease;
 }
 
 .team-card:hover img {
-  filter: brightness(1.1);
+  transform: scale(1.05);
+}
+
+.team-info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .team-card h3 {
-  margin: 1.25rem 0 0.5rem;
-  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
   color: #ffffff;
   transition: color 0.3s ease;
 }
 
 .team-card:hover h3 {
-  color: #1a4b8c;
+  color: #d4caff;
 }
 
 .team-card p {
-  font-size: 1rem;
-  color: #b0b0b0;
-  text-align: center;
-  padding: 0 1rem;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
 }
 
 /* Animations */
@@ -106,7 +117,7 @@
   }
 }
 
-/* Add animation delay for each card */
+/* Animation delays */
 .team-container .team-card:nth-child(1) { --index: 1; }
 .team-container .team-card:nth-child(2) { --index: 2; }
 .team-container .team-card:nth-child(3) { --index: 3; }
@@ -114,32 +125,32 @@
 .team-container .team-card:nth-child(5) { --index: 5; }
 .team-container .team-card:nth-child(6) { --index: 6; }
 
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
+/* Media Queries */
+@media screen and (max-width: 900px) {
+  .team-container {
+    grid-template-columns: repeat(2, minmax(180px, 250px));
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team-container {
+    grid-template-columns: minmax(160px, 220px);
+    gap: 1.5rem;
   }
   
-  .team-container {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  .team-info {
+    padding: 1rem;
+  }
+  
+  .team-card img {
+    height: 200px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #about {
-    padding: 3rem 1rem;
-  }
-  
-  .section-title {
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-  }
-  
-  .team-card img {
-    height: 220px;
-  }
-  
-  .team-card h3 {
-    font-size: 1.25rem;
+  .team-container {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
   }
 }

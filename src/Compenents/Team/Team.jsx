@@ -13,13 +13,15 @@ const teamMembers = [
 const Team = () => {
   return (
     <section id="about">
-      <h2 className="section-title">Our <span>Team</span></h2>
+      <h2 className="section-title">OUR TEAM</h2>
       <div className="team-container">
         {teamMembers.map((member, index) => (
           <div className="team-card" key={index}>
             <img src={member.img} alt={member.name} />
-            <h3>{member.name}</h3>
-            <p>{member.role}</p>
+            <div className="team-info">
+              <h3>{member.name}</h3>
+              <p>{member.role}</p>
+            </div>
           </div>
         ))}
       </div>

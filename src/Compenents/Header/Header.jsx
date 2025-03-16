@@ -36,7 +36,7 @@ const Header = () => {
     <>
       <header className={`header ${sticky ? 'sticky' : ''}`}>
         <a href="#home" className="logo">
-          <img src="static/LOGO.png" alt="Maanikya Logo" />
+          <img src="src/assets/Maanikya.png" alt="Maanikya Logo" />
         </a>
 
         <i 
