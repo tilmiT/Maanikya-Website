@@ -4,7 +4,7 @@ import './Vision.css';
 const Vision = () => {
   return (
     <section className="gem-registration">
-      <h2 className="title">How It Workers</h2>
+      <h2 className="title">How It Works</h2>
       <p className="subtitle">Effortlessly register your gemstones with our intuitive platform.</p>
 
       <div className="cards-container">
