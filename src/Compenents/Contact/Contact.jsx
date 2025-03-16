@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contactSection">
       <div className="contactContainer">
-        <h2>Contact Me</h2>
+        <h2>Contact Us</h2>
         <p>Feel free to reach out via the form below or connect on social platforms.</p>
 
         <form
