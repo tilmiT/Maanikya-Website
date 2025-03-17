@@ -48,7 +48,7 @@ const Header = () => {
         <nav className={`navbar ${menuOpen ? "open" : ""}`}>
           <a href="#home" onClick={closeMenu}>Home</a>
           <a href="#features" onClick={closeMenu}>Features</a>
-          <a href="#why" onClick={closeMenu}>How it Works</a>
+          <a href="#vision" onClick={closeMenu}>How it Works</a>
           <a href="#about" onClick={closeMenu}>Our Team</a>
         </nav>
 

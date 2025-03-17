@@ -1,6 +1,6 @@
 /* Team.css - Modern and Responsive */
 #about {
-  background-color: rgba(164, 209, 239, 0.5);
+  background-color: rgba(154, 83, 230, 0.196);
   padding: clamp(3rem, 5vw, 4rem) clamp(1rem, 3vw, 2rem);
   color: #ffffff;
 }
@@ -53,14 +53,14 @@
   opacity: 0;
   animation: fadeIn 0.5s forwards;
   animation-delay: calc(0.1s * var(--index, 0));
-  max-height: 400px; /* Control card height */
+  max-height: 350px; /* Control card height */
   width: 100%;
   margin: 0 auto;
 }
 
 .team-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(139, 92, 225, 0.4);
+  box-shadow: 0 15px 30px rgba(139, 92, 225, 0.83);
 }
 
 .team-card img {

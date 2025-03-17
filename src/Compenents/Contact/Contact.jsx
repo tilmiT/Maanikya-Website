@@ -12,7 +12,7 @@ const Contact = () => {
         <p>Feel free to reach out via the form below or connect on social platforms.</p>
 
         <form
-          action="https://formsubmit.co/your-email@example.com"
+          action="https://formsubmit.co/maanikya.app@gmail.com"
           method="POST"
           className="contactForm"
         >
@@ -24,10 +24,10 @@ const Contact = () => {
 
         <div className="socialLinks">
          
-          <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/maanikya_lk?igsh=bHU0aHZrcTI1cmJh" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="instaIcon" />
         </a>
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/share/1XjPD8bZsr/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
           <FaFacebook className="facebookIcon" />
         </a>
         

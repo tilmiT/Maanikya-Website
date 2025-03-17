@@ -13,7 +13,7 @@ const teamMembers = [
 const Team = () => {
   return (
     <section id="about">
-      <h2 className="section-title">OUR TEAM</h2>
+      {/* <h2 className="section-title">OUR TEAM</h2> */}
       <div className="team-container">
         {teamMembers.map((member, index) => (
           <div className="team-card" key={index}>

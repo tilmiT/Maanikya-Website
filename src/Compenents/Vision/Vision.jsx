@@ -3,7 +3,7 @@ import './Vision.css';
 
 const Vision = () => {
   return (
-    <section className="gem-registration">
+    <section className="gem-registration" id="vision">
       <h2 className="title">How It Works</h2>
       <p className="subtitle">Effortlessly register your gemstones with our intuitive platform.</p>
 

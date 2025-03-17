@@ -21,10 +21,10 @@ const Home = () => {
         <p className="slide-up">Transforming the way gemstones are managed with innovative technology that ensures accuracy, security, and transparency</p>
 
         <div className="social-icons">
-          <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer" className="icon-hover">
+          <a href="https://www.instagram.com/maanikya_lk?igsh=bHU0aHZrcTI1cmJh" target="_blank" rel="noopener noreferrer" className="icon-hover">
             <FaInstagram className="instaIcon" />
           </a>
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="icon-hover">
+          <a href="https://www.facebook.com/share/1XjPD8bZsr/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="icon-hover">
             <FaFacebook className="facebookIcon" />
           </a>
         </div>
