@@ -1,0 +1,129 @@
+/* Contact.css */
+.contactSection {
+    padding: 4rem 2rem;
+    background-image: url('src/assets/background/contactUs.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contactContainer {
+    max-width: 450px; /* Smaller container */
+    width: 100%;
+    background: rgba(255, 255, 255, 0.404);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contactContainer h2 {
+    color: #454680;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .contactContainer p {
+    color: #6a6a96;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    padding: 0.8rem;
+    border: 1px solid #dedeff;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+  }
+  
+  .contactForm input:focus,
+  .contactForm textarea:focus {
+    outline: none;
+    border-color: #a095d1;
+    box-shadow: 0 0 0 2px rgba(160, 149, 209, 0.2);
+  }
+  
+  .contactForm textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .contactForm button {
+    background: linear-gradient(to right, #8574c0, #6f98be);
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactForm button:hover {
+    background: linear-gradient(to right, #7664af, #5d88b0);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .socialLinks a {
+    background: linear-gradient(135deg, #9a8dcc, #6a97be);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .socialLinks a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .instaIcon,
+  .facebookIcon {
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 500px) {
+    .contactContainer {
+      padding: 1.5rem;
+      max-width: 90%;
+    }
+    
+    .contactContainer h2 {
+      font-size: 1.75rem;
+    }
+    
+    .contactForm button {
+      padding: 0.7rem;
+    }
+  }
