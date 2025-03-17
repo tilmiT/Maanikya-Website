@@ -62,8 +62,7 @@ const Features = () => {
             Our <span>Features</span>
           </h2>
           <p className="sub-title">
-            EleEYE uses AI-powered detection and real-time community updates to
-            prevent elephant-vehicle collisions.
+          Effortlessly register your gemstones with our intuitive platform.
           </p>
         </div>
         <div className="right">
