@@ -20,7 +20,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.2rem 5%;
+  padding: 1rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,8 +31,8 @@
 }
 
 .header.sticky {
-  padding: 0.8rem 5%;
-  background: rgba(245, 243, 255, 0.95);
+  padding: 0.7rem 5%;
+  background: rgba(245, 243, 255, 0.75);
   backdrop-filter: blur(10px);
   box-shadow: 0 3px 15px var(--shadow-medium);
 }
@@ -43,12 +43,12 @@
 }
 
 .logo img {
-  height: 40px;
+  width: 100px;
   transition: all var(--transition-speed) ease;
 }
 
 .header.sticky .logo img {
-  height: 35px;
+  width: 85px;
 }
 
 .navbar {
@@ -180,7 +180,7 @@
   }
   
   .logo img {
-    height: 35px;
+    width: 75px;
   }
   
   .gradient-btn {
