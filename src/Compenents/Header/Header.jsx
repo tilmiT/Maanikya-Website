@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-import logoImage from "../../assets/Maanikya.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +36,7 @@ const Header = () => {
     <>
       <header className={`header ${sticky ? 'sticky' : ''}`}>
         <a href="#home" className="logo">
-          <img src={logoImage} alt="Maanikya Logo" />
+          <img src="src/assets/Maanikya.png" alt="Maanikya Logo" />
         </a>
 
         <i 

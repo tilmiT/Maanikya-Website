@@ -1,19 +1,13 @@
 import React from "react";
 import "./Team.css";
-import kavinthaImg from "../../assets/Team/Kavintha.jpg";
-import thulaniImg from "../../assets/Team/Thulani.jpg";
-import dulithImg from "../../assets/Team/Dulith.jpg";
-import isumImg from "../../assets/Team/Isum.jpg";
-import meharaImg from "../../assets/Team/Mehara.jpg";
-import tilmiImg from "../../assets/Team/Tilmi.jpg";
 
 const teamMembers = [
-  { name: "Kavintha Dinushan", role: "Team Leader and Project Manager", img: kavinthaImg },
-  { name: "Thulani Kalatuwawa", role: "FrontEnd Developer", img: thulaniImg },
-  { name: "Dulith Wanigarathne", role: "BackEnd Developer", img: dulithImg },
-  { name: "Isum Perera", role: "Machine Learning Engineer", img: isumImg },
-  { name: "Mehara Wilfred", role: "Database Specialist", img: meharaImg },
-  { name: "Tilmi Premarathne", role: "UI/UX & Marketing", img: tilmiImg }
+  { name: "Kavintha Dinushan", role: "Team Leader and Project Manager", img: "src/assets/Team/Kavintha.jpg" },
+  { name: "Thulani Kalatuwawa", role: "FrontEnd Developer", img: "src/assets/Team/Thulani.jpg" },
+  { name: "Dulith Wanigarathne", role: "BackEnd Developer", img: "src/assets/Team/Dulith.jpg" },
+  { name: "Isum Perera", role: "Machine Learning Engineer", img: "src/assets/Team/Isum.jpg" },
+  { name: "Mehara Wilfred", role: "Database Specialist", img: "src/assets/Team/Mehara.jpg" },
+  { name: "Tilmi Premarathne", role: "UI/UX & Marketing", img: "src/assets/Team/Tilmi.jpg" }
 ];
 
 const Team = () => {
