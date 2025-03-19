@@ -1,7 +1,7 @@
 /* Contact.css */
 .contactSection {
     padding: 4rem 2rem;
-    background-image: url('src/assets/background/contactUs.jpg');
+    background-image: url('/src/assets/background/contactUs.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
