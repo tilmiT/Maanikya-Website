@@ -42,11 +42,11 @@
   z-index: 2;
 }
 
-.title {
-  font-size: 3.5rem;
+.gem-registration .title {
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(to right, #35ffff, #0008ff);
+  background: linear-gradient(to right, #ffffff, #e4e4e9);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -62,12 +62,12 @@
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400; /* Regular weight for subtitle */
   margin-bottom: 3rem;
   max-width: 700px;
   text-align: center;
-  color: rgb(21, 47, 73);
+  color: #f5f4f4;
 }
 
 .cards-container {
@@ -122,8 +122,12 @@
 .card p {
   font-size: 1rem;
   line-height: 1.7;
-  color: rgb(84, 21, 243);
+  color: rgb(26 10 66);
   font-weight: 400; /* Regular weight for card text */
+}
+
+.card:hover p{
+  color: #fff;
 }
 
 /* Responsive Styles */

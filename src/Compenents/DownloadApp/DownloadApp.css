@@ -1,0 +1,39 @@
+.download-app {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #19238d, #011529); /* Gradient background */
+  color: #fff;
+}
+
+.download-app h2 {
+  font-size: 2rem;
+  /* margin-bottom: 1rem; */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.download-app p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient button */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.download-button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+}

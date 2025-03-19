@@ -26,6 +26,11 @@
   font-weight: bold;
   color: #000000; /* White title text */
   margin-bottom: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .title span {
@@ -34,7 +39,7 @@
 
 .sub-title {
   font-size: 1em; /* Adjust font size */
-  color: #000000; /* White subtitle text */
+  color: #434444; /* White subtitle text */
   line-height: 1.4;
 }
 
@@ -83,7 +88,7 @@
 .icon-container {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .feature-icon {
@@ -100,4 +105,12 @@
   height: 2px; /* Thickness of the line */
   background-color: #7dd3fc; /* Light blue color */
   transform: translateY(-50%); /* Center vertically */
+}
+
+.cardFeature{
+  margin-top: 25px;
+}
+
+.sub{
+  margin-bottom: 7px;
 }
