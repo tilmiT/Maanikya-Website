@@ -250,6 +250,13 @@
   }
 }
 
+/* Disable shimmer effect for mobile view */
+@media (max-width: 768px) {
+  .home-content h1::after {
+    animation: none;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 991px) {
   .home {
